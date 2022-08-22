@@ -1,6 +1,525 @@
-body{
+body {
     background-color: #000117;
     color: #FFF500;
+    font-family: system-ui, sans-serif;
+    font-size: 1rem;
+}
+
+
+.logo,.main-t{
+    color: #FFF500;
+    text-decoration: none;
+    font-family: 'Lancelot', cursive;
+}
+.main-t{
+    font-size: 11rem;
+    padding: 0;
+    
+}
+.code {
+    color: #FFF500;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'La Belle Aurore', cursive;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #001C45;
+}
+.main-heading{
+    font-size: 10rem;
+    font-family: 'IM Fell Great Primer SC', serif;
+}
+.c{
+
+    height: auto;
+    overflow: hidden;
+}
+.rt{
+    height: auto;
+    overflow: hidden;
+}
+.r{
+    width: 200px;
+    float: right;
+}
+.l {
+    width: auto;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+/* -------------------------------------- */
+body {
+    margin: 0;
+}
+
+
+
+
+.scrolling-words-container {
+    /* display: flex; */
+    /* align-items: flex-start; */
+    font-size: 9rem;
+    font-weight: 600;
+}
+
+.scrolling-words-box {
+    height: 10.5rem;
+    margin: auto;
+    overflow: hidden;
+}
+
+.scrolling-words-box ul {
+    margin: 0 0.625rem;
+    padding: 0;
+    animation: scrollUp 4s infinite;
+}
+
+.scrolling-words-box ul li {
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: flex-end; */
+    height: 3rem;
+    list-style: none;
+}
+
+@keyframes scrollUp {
+
+    15%,
+    25% {
+        transform: translateY(-20%);
+    }
+
+    40%,
+    50% {
+        transform: translateY(-40%);
+    }
+
+    65%,
+    75% {
+        transform: translateY(-60%);
+    }
+
+    90%,
+    100% {
+        transform: translateY(-80%);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #001C45;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 9px;
+}
+
+ul.topnav li {
+    float: left;
+}
+
+ul.topnav li a {
+    display: block;
+    color: #FFF500;
     text-align: center;
-    padding-top: 45vh;
+    padding: 16px 16px;
+    text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {
+    background-color: #111;
+}
+
+ul.topnav li a.active {
+    background-color: #003077;
+}
+
+ul.topnav li.right {
+    float: right;
+}
+
+@media screen and (max-width: 600px) {
+
+    ul.topnav li.right,
+    ul.topnav li {
+        float: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* !  Image  */
+
+svg#freepik_stories-code-typing:not(.animated) .animable {
+    opacity: 0;
+}
+
+svg#freepik_stories-code-typing.animated #freepik--Plant--inject-34 {
+    animation: 1s 1 forwards cubic-bezier(.36, -0.01, .5, 1.38) slideDown;
+    animation-delay: 0s;
+}
+
+svg#freepik_stories-code-typing.animated #freepik--Pictures--inject-34 {
+    animation: 1s 1 forwards cubic-bezier(.36, -0.01, .5, 1.38) slideLeft;
+    animation-delay: 0s;
+}
+
+svg#freepik_stories-code-typing.animated #freepik--Character--inject-34 {
+    animation: 1s 1 forwards cubic-bezier(.36, -0.01, .5, 1.38) fadeIn;
+    animation-delay: 0s;
+}
+
+svg#freepik_stories-code-typing.animated #el3bs08xag8i5 {
+    animation: 1s 1 forwards linear slideLeft;
+    animation-delay: 0s;
+}
+
+svg#freepik_stories-code-typing.animated #elfxds1xu8qde {
+    animation: 1s 1 forwards linear slideLeft;
+    animation-delay: 0.021739130434782608s;
+    opacity: 0
+}
+
+svg#freepik_stories-code-typing.animated #elspzkxyygjw {
+    animation: 1s 1 forwards linear slideLeft;
+    animation-delay: 0.043478260869565216s;
+    opacity: 0
+}
+
+svg#freepik_stories-code-typing.animated #els0fs5pj27c9 {
+    animation: 1s 1 forwards linear slideLeft;
+    animation-delay: 0.06521739130434782s;
+    opacity: 0
+}
+
+svg#freepik_stories-code-typing.animated #elalw5oa76ibm {
+    animation: 1s 1 forwards linear slideLeft;
+    animation-delay: 0.08695652173913043s;
+    opacity: 0
+}
+
+svg#freepik_stories-code-typing.animated #el9y14awcf9lv {
+    animation: 1s 1 forwards linear slideLeft;
+    animation-delay: 0.10869565217391304s;
+    opacity: 0
+}
+
+svg#freepik_stories-code-typing.animated #eln4ml09svr8f {
+    animation: 1s 1 forwards linear slideLeft;
+    animation-delay: 0.13043478260869565s;
+    opacity: 0
+}
+
+svg#freepik_stories-code-typing.animated #el3wrvkgpnivl {
+    animation: 1s 1 forwards linear slideLeft;
+    animation-delay: 0.15217391304347827s;
+    opacity: 0
+}
+
+svg#freepik_stories-code-typing.animated #ele2jy0ktdocb {
+    animation: 1s 1 forwards linear slideLeft;
+    animation-delay: 0.17391304347826086s;
+    opacity: 0
+}
+
+svg#freepik_stories-code-typing.animated #elkcvz2iykvm {
+    animation: 1s 1 forwards linear slideLeft;
+    animation-delay: 0.19565217391304346s;
+    opacity: 0
+}
+
+svg#freepik_stories-code-typing.animated #elhcp4nftvx5d {
+    animation: 1s 1 forwards linear slideLeft;
+    animation-delay: 0.21739130434782608s;
+    opacity: 0
+}
+
+svg#freepik_stories-code-typing.animated #elkmi78hxoxx {
+    animation: 1s 1 forwards linear slideLeft;
+    animation-delay: 0.2391304347826087s;
+    opacity: 0
+}
+
+svg#freepik_stories-code-typing.animated #elz6wo38j42i {
+    animation: 1s 1 forwards linear slideLeft;
+    animation-delay: 0.2608695652173913s;
+    opacity: 0
+}
+
+svg#freepik_stories-code-typing.animated #el6ckxz8saab5 {
+    animation: 1s 1 forwards linear slideLeft;
+    animation-delay: 0.2826086956521739s;
+    opacity: 0
+}
+
+svg#freepik_stories-code-typing.animated #el5hyzd9y899v {
+    animation: 1s 1 forwards linear slideLeft;
+    animation-delay: 0.30434782608695654s;
+    opacity: 0
+}
+
+svg#freepik_stories-code-typing.animated #elxrprn3l53ej {
+    animation: 1s 1 forwards linear slideLeft;
+    animation-delay: 0.32608695652173914s;
+    opacity: 0
+}
+
+svg#freepik_stories-code-typing.animated #el926aaosrojl {
+    animation: 1s 1 forwards linear slideLeft;
+    animation-delay: 0.34782608695652173s;
+    opacity: 0
+}
+
+svg#freepik_stories-code-typing.animated #elygjpsq2229e {
+    animation: 1s 1 forwards linear slideLeft;
+    animation-delay: 0.3695652173913043s;
+    opacity: 0
+}
+
+svg#freepik_stories-code-typing.animated #eldarx0v6f0c {
+    animation: 1s 1 forwards linear slideLeft;
+    animation-delay: 0.3913043478260869s;
+    opacity: 0
+}
+
+svg#freepik_stories-code-typing.animated #eltipivycihtb {
+    animation: 1s 1 forwards linear slideLeft;
+    animation-delay: 0.41304347826086957s;
+    opacity: 0
+}
+
+svg#freepik_stories-code-typing.animated #elm3tah72wdbr {
+    animation: 1s 1 forwards linear slideLeft;
+    animation-delay: 0.43478260869565216s;
+    opacity: 0
+}
+
+svg#freepik_stories-code-typing.animated #el45a49sqawuq {
+    animation: 1s 1 forwards linear slideLeft;
+    animation-delay: 0.45652173913043476s;
+    opacity: 0
+}
+
+svg#freepik_stories-code-typing.animated #el6xks5hm9zu8 {
+    animation: 1s 1 forwards linear slideLeft;
+    animation-delay: 0.4782608695652174s;
+    opacity: 0
+}
+
+svg#freepik_stories-code-typing.animated #el15o5c817fe {
+    animation: 1s 1 forwards linear slideLeft;
+    animation-delay: 0.5s;
+    opacity: 0
+}
+
+svg#freepik_stories-code-typing.animated #elvmwoxzuphqo {
+    animation: 1s 1 forwards linear slideLeft;
+    animation-delay: 0.5217391304347826s;
+    opacity: 0
+}
+
+svg#freepik_stories-code-typing.animated #elof6erut2cd9 {
+    animation: 1s 1 forwards linear slideLeft;
+    animation-delay: 0.5434782608695652s;
+    opacity: 0
+}
+
+svg#freepik_stories-code-typing.animated #elf1maqbybxtc {
+    animation: 1s 1 forwards linear slideLeft;
+    animation-delay: 0.5652173913043478s;
+    opacity: 0
+}
+
+svg#freepik_stories-code-typing.animated #elhgd88ykqv6h {
+    animation: 1s 1 forwards linear slideLeft;
+    animation-delay: 0.5869565217391304s;
+    opacity: 0
+}
+
+svg#freepik_stories-code-typing.animated #elpb6p19wycyf {
+    animation: 1s 1 forwards linear slideLeft;
+    animation-delay: 0.6086956521739131s;
+    opacity: 0
+}
+
+svg#freepik_stories-code-typing.animated #elpuxa93fbsp {
+    animation: 1s 1 forwards linear slideLeft;
+    animation-delay: 0.6304347826086957s;
+    opacity: 0
+}
+
+svg#freepik_stories-code-typing.animated #elqeir5irihpg {
+    animation: 1s 1 forwards linear slideLeft;
+    animation-delay: 0.6521739130434783s;
+    opacity: 0
+}
+
+svg#freepik_stories-code-typing.animated #elmx6oxmtu74 {
+    animation: 1s 1 forwards linear slideLeft;
+    animation-delay: 0.6739130434782609s;
+    opacity: 0
+}
+
+svg#freepik_stories-code-typing.animated #elcd3fo4lbubn {
+    animation: 1s 1 forwards linear slideLeft;
+    animation-delay: 0.6956521739130435s;
+    opacity: 0
+}
+
+svg#freepik_stories-code-typing.animated #elhm1tiku1wmb {
+    animation: 1s 1 forwards linear slideLeft;
+    animation-delay: 0.717391304347826s;
+    opacity: 0
+}
+
+svg#freepik_stories-code-typing.animated #elrc1te9lrz5o {
+    animation: 1s 1 forwards linear slideLeft;
+    animation-delay: 0.7391304347826086s;
+    opacity: 0
+}
+
+svg#freepik_stories-code-typing.animated #elp6uerqiaayr {
+    animation: 1s 1 forwards linear slideLeft;
+    animation-delay: 0.7608695652173912s;
+    opacity: 0
+}
+
+svg#freepik_stories-code-typing.animated #eljn7ixyxgbpa {
+    animation: 1s 1 forwards linear slideLeft;
+    animation-delay: 0.7826086956521738s;
+    opacity: 0
+}
+
+svg#freepik_stories-code-typing.animated #ely378zrtmay {
+    animation: 1s 1 forwards linear slideLeft;
+    animation-delay: 0.8043478260869565s;
+    opacity: 0
+}
+
+svg#freepik_stories-code-typing.animated #elpkq40cm1ruh {
+    animation: 1s 1 forwards linear slideLeft;
+    animation-delay: 0.8260869565217391s;
+    opacity: 0
+}
+
+svg#freepik_stories-code-typing.animated #el2au3r3kia7g {
+    animation: 1s 1 forwards linear slideLeft;
+    animation-delay: 0.8478260869565217s;
+    opacity: 0
+}
+
+svg#freepik_stories-code-typing.animated #eljlgd7wpx8q {
+    animation: 1s 1 forwards linear slideLeft;
+    animation-delay: 0.8695652173913043s;
+    opacity: 0
+}
+
+svg#freepik_stories-code-typing.animated #elr2elsd6sp4 {
+    animation: 1s 1 forwards linear slideLeft;
+    animation-delay: 0.8913043478260869s;
+    opacity: 0
+}
+
+svg#freepik_stories-code-typing.animated #els3j7wbnz1c {
+    animation: 1s 1 forwards linear slideLeft;
+    animation-delay: 0.9130434782608695s;
+    opacity: 0
+}
+
+svg#freepik_stories-code-typing.animated #el44n0ow6bxke {
+    animation: 1s 1 forwards linear slideLeft;
+    animation-delay: 0.9347826086956521s;
+    opacity: 0
+}
+
+svg#freepik_stories-code-typing.animated #eli4wu91a1v6q {
+    animation: 1s 1 forwards linear slideLeft;
+    animation-delay: 0.9565217391304348s;
+    opacity: 0
+}
+
+svg#freepik_stories-code-typing.animated #elzwb7324747 {
+    animation: 1s 1 forwards linear slideLeft;
+    animation-delay: 0.9782608695652174s;
+    opacity: 0
+}
+
+svg#freepik_stories-code-typing.animated #freepik--Screen--inject-34 {
+    animation: 1s 1 forwards linear slideLeft;
+    animation-delay: 0s;
+}
+
+@keyframes slideDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
