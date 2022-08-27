@@ -1,0 +1,540 @@
+
+
+
+
+
+
+
+
+
+/* -------------------------------- 
+
+File#: _1_stacking-cards
+Title: Stacking Cards
+Descr: Cards stack effect on vertical scrolling
+Usage: codyhouse.co/license
+
+-------------------------------- */
+/* reset */
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+* {
+    font: inherit;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    line-height: 1.2;
+    color: hsl(230 13% 9%);
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 2.0736rem;
+}
+
+h2 {
+    font-size: 1.728rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
+h4 {
+    font-size: 1.2rem;
+}
+
+ol,
+ul,
+menu {
+    list-style: none;
+}
+
+button,
+input,
+textarea,
+select {
+    background-color: transparent;
+    border-radius: 0;
+    color: inherit;
+    line-height: inherit;
+    appearance: none;
+}
+
+textarea {
+    resize: vertical;
+    overflow: auto;
+    vertical-align: top;
+}
+
+a {
+    color: rgb(52, 39, 236);
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+img,
+video,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+@media (min-width: 64rem) {
+    body {
+        font-size: 1.25rem;
+    }
+
+    h1 {
+        font-size: 3.051rem;
+    }
+
+    h2 {
+        font-size: 2.44rem;
+    }
+
+    h3 {
+        font-size: 1.75rem;
+    }
+
+    h4 {
+        font-size: 1.5625rem;
+    }
+}
+
+/* variables */
+:root {
+    /* colors */
+    --sg0-color-primary-hsl: 250, 84%, 54%;
+    --sg0-color-bg-hsl: 0, 0%, 100%;
+    --sg0-color-contrast-high-hsl: 230, 7%, 23%;
+    --sg0-color-contrast-higher-hsl: 230, 13%, 9%;
+    --sg0-color-bg-light-hsl: 0, 0%, 100%;
+
+    /* spacing */
+    --sg0-space-sm: 0.75rem;
+    --sg0-space-md: 1.25rem;
+}
+
+@media(min-width: 64rem) {
+    :root {
+        /* spacing */
+        --sg0-space-sm: 1.125rem;
+        --sg0-space-md: 2rem;
+    }
+}
+
+/* component */
+.stack-cards {
+    --stack-cards-gap: var(--sg0-space-sm);
+    --stack-cards-item-ratio: 2/1;
+    background-color: #002966;
+}
+
+.stack-cards__item {
+    position: relative;
+    position: -webkit-sticky;
+    position: sticky;
+    top: var(--sg0-space-md);
+    height: 0;
+    padding-bottom: calc(100%/(var(--stack-cards-item-ratio)));
+    -webkit-transform-origin: center top;
+    transform-origin: center top;
+}
+
+.stack-cards__item>* {
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+/* utility classes */
+.sg0-overflow-hidden {
+    overflow: hidden;
+}
+
+.sg0-shadow-md {
+    box-shadow: 0 0.9px 1.5px rgba(0, 0, 0, 0.03), 0 3.1px 5.5px rgba(0, 0, 0, 0.08), 0 14px 25px rgba(0, 0, 0, 0.12);
+}
+
+.sg0-radius-lg {
+    border-radius: 0.5em;
+}
+
+.sg0-bg {
+    --sg0-bg-o: 1;
+    background-color: rgb(255, 0, 0);
+}
+
+.sg0-flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.sg0-flex {
+    display: flex;
+}
+
+:where(.sg0-inner-glow) {
+    position: relative;
+}
+
+.sg0-inner-glow::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    pointer-events: none;
+    box-shadow: inset 0 0 0.5px 1px hsla(0, 0%, 100%, 0.075);
+}
+
+.card {
+    background-color: #242424;
+    border-radius: 0.5em;
+}
+
+.sg0-bg-light {
+    --sg0-bg-o: 1;
+    background-color: #002966;
+}
+
+
+
+
+
+
+
+
+
+/* ! card inside */
+/* -------------------------------- 
+
+File#: _2_card-v13
+Title: Card v13
+Descr: Container of information used as teaser for further content exploration
+Usage: codyhouse.co/license
+
+-------------------------------- */
+/* reset */
+*, *::after, *::before {
+    box-sizing: border-box;
+  }
+  
+  * {
+    font: inherit;
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+
+  
+  h1, h2, h3, h4 {
+    line-height: 1.2;
+    color: rgb(102, 255, 0);
+    font-weight: 700;
+  }
+  
+  h1 {
+    font-size: 2.0736rem;
+  }
+  
+  h2 {
+    font-size: 1.728rem;
+  }
+  
+  h3 {
+    font-size: 1.25rem;
+  }
+  
+  h4 {
+    font-size: 1.2rem;
+  }
+  
+  ol, ul, menu {
+    list-style: none;
+  }
+  
+  button, input, textarea, select {
+    background-color: transparent;
+    border-radius: 0;
+    color: inherit;
+    line-height: inherit;
+    appearance: none;
+  }
+  
+  textarea {
+    resize: vertical;
+    overflow: auto;
+    vertical-align: top;
+  }
+  
+  a {
+    color: rgb(255, 0, 0);
+  }
+  
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  
+  img, video, svg {
+    display: block;
+    max-width: 500px;
+  }
+  
+  @media (min-width: 64rem) {
+    body {
+      font-size: 1.25rem;
+    }
+  
+    h1 {
+      font-size: 3.051rem;
+    }
+  
+      h2 {
+      font-size: 2.44rem;
+    }
+  
+      h3 {
+      font-size: 1.75rem;
+    }
+  
+      h4 {
+      font-size: 1.5625rem;
+    }
+  }
+  
+  /* variables */
+  :root {
+    /* colors */
+    --cr8-color-primary-hsl: 250, 84%, 54%;
+    --cr8-color-bg-hsl: 0, 0%, 100%;
+    --cr8-color-contrast-high-hsl: 230, 7%, 23%;
+    --cr8-color-contrast-higher-hsl: 230, 13%, 9%;
+    --cr8-color-contrast-medium-hsl: 225, 4%, 47%;
+  
+    /* spacing */
+    --cr8-space-xs: 0.5rem;
+    --cr8-space-sm: 0.75rem;
+    --cr8-space-md: 1.25rem;
+    --cr8-space-xl: 3.25rem;
+  
+    /* typography */
+    --cr8-text-md: 1.2rem;
+    --cr8-text-sm: 0.833rem;
+  }
+  
+  @media(min-width: 64rem){
+    :root {
+      /* spacing */
+      --cr8-space-xs: 0.75rem;
+      --cr8-space-sm: 1.125rem;
+      --cr8-space-md: 2rem;
+      --cr8-space-xl: 5.125rem;
+  
+      /* typography */
+      --cr8-text-md: 1.5625rem;
+      --cr8-text-sm: 1rem;
+    }
+  }
+  
+  /* icons */
+  .cr8-icon {
+    height: var(--cr8-size, 1em);
+    width: var(--cr8-size, 1em);
+    display: inline-block;
+    color: inherit;
+    fill: currentColor;
+    line-height: 1;
+    flex-shrink: 0;
+    max-width: initial;
+  }
+  
+  .cr8-icon--xs {
+    --cr8-size: 16px;
+  }
+  
+  /* component */
+  .card-v13 {
+    --transition-duration: .3s;
+  }
+  
+  .card-v13__figure-wrapper {
+    display: block;
+  }
+  
+  .card-v13__figure {
+    -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    transition: -webkit-clip-path var(--transition-duration) cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition: clip-path var(--transition-duration) cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition: clip-path var(--transition-duration) cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-clip-path var(--transition-duration) cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  .card-v13__figure img {
+    display: block;
+    width: 100%;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+    transition: -webkit-transform var(--transition-duration) cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-filter var(--transition-duration);
+    transition: transform var(--transition-duration) cubic-bezier(0.215, 0.61, 0.355, 1), filter var(--transition-duration);
+    transition: transform var(--transition-duration) cubic-bezier(0.215, 0.61, 0.355, 1), filter var(--transition-duration), -webkit-transform var(--transition-duration) cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-filter var(--transition-duration);
+  }
+  .card-v13__figure-wrapper:hover .card-v13__figure {
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+            clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  }
+  .card-v13__figure-wrapper:hover .card-v13__figure img {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-filter: grayscale(0%);
+            filter: grayscale(0%);
+  }
+  
+  .card-v13__separator {
+    display: block;
+    width: 40px;
+    height: 3px;
+    background-color: hsla(var(--cr8-color-contrast-higher-hsl), 0.1);
+  }
+  
+  /* utility classes */
+  .cr8-padding-x-md {
+    padding-left: var(--cr8-space-md);
+    padding-right: var(--cr8-space-md);
+  }
+  
+  .cr8-padding-y-xs {
+    padding-top: var(--cr8-space-xs);
+    padding-bottom: var(--cr8-space-xs);
+  }
+  
+  .cr8-text-sm {
+    font-size: var(--cr8-text-sm);
+  }
+  
+  .cr8-radius-md {
+    border-radius: 0.25em;
+  }
+  
+  .cr8-margin-top-sm {
+    margin-top: var(--cr8-space-sm);
+  }
+  
+  .cr8-line-height-lg {
+    line-height: 1.58;
+  }
+  
+  .cr8-color-contrast-medium {
+    --cr8-color-o: 1;
+    color: wheat;
+  }
+  
+  .cr8-margin-y-sm {
+    margin-top: var(--cr8-space-sm);
+    margin-bottom: var(--cr8-space-sm);
+  }
+  
+  .cr8-margin-x-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .cr8-color-contrast-higher {
+    --cr8-color-o: 1;
+    color: #FFF500;
+  }
+  
+  .cr8-text-md {
+    font-size: var(--cr8-text-md);
+  }
+  
+  .cr8-text-center {
+    text-align: center;
+  }
+  
+  .cr8-gap-xl {
+    gap: var(--cr8-space-xl);
+  }
+  
+  .cr8-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  }
+  
+  .cr8-grid > * {
+    min-width: 0;
+    grid-column-end: span 12;
+  }
+  
+  .cr8-margin-bottom-xl {
+    margin-bottom: var(--cr8-space-xl);
+  }
+  
+  .cr8-max-width-adaptive-lg {
+    max-width: 32rem;
+  }
+  
+  @media(min-width: 48rem) {
+    .cr8-max-width-adaptive-lg {
+      max-width: 48rem;
+    }
+  }
+  
+  @media(min-width: 64rem) {
+    .cr8-max-width-adaptive-lg {
+      max-width: 64rem;
+    }
+  }
+  
+  @media(min-width: 80rem) {
+    .cr8-max-width-adaptive-lg {
+      max-width: 80rem;
+    }
+  }
+  
+  .cr8-container {
+    width: calc(100% - 2*var(--cr8-space-md));
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .cr8-padding-y-xl {
+    padding-top: var(--cr8-space-xl);
+    padding-bottom: var(--cr8-space-xl);
+  }
+  
+  .cr8-z-index-1 {
+    z-index: 1;
+  }
+  
+  .cr8-position-relative {
+    position: relative;
+  }
+  
+  @media(min-width: 64rem){
+    .cr8-col-4\@md {
+      grid-column-end: span 4;
+    }
+  }
