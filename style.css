@@ -22,7 +22,8 @@ body {
 
 
 .logo,
-.main-t {
+.main-t,
+.copyright-logo {
     color: #FFF500;
     text-decoration: none;
     font-family: 'Lancelot', cursive;
@@ -32,7 +33,10 @@ body {
     padding-top: 5px;
     padding-left: 5px;
 }
-
+.copyright-logo{
+    font-size: 2rem;
+    letter-spacing: -3px;
+}
 .main-t {
     font-size: 11rem;
     padding: 0;
@@ -99,12 +103,27 @@ body {
 }
 
 
+.contact{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: inline-block;
+    text-align: center;
+}
+.copyright{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: inline-block;
+    text-align: center;
+
+}
 
 
 
-
-
-
+a{
+    color: #FFF500;
+  }
 
 
 
@@ -176,35 +195,6 @@ Title: Confetti Button
 
 -------------------------------- */
 /* reset */
-*,
-*::after,
-*::before {
-    box-sizing: border-box;
-}
-
-
-
-@media (min-width: 64rem) {
-    body {
-        font-size: 1.25rem;
-    }
-
-    h1 {
-        font-size: 3.051rem;
-    }
-
-    h2 {
-        font-size: 2.44rem;
-    }
-
-    h3 {
-        font-size: 1.75rem;
-    }
-
-    h4 {
-        font-size: 1.5625rem;
-    }
-}
 
 /* variables */
 :root {
@@ -243,8 +233,8 @@ Title: Confetti Button
     font-size: 1em;
     white-space: nowrap;
     text-decoration: none;
-    background: hsl(var(--cb1-color-bg-dark-hsl));
-    color: hsl(var(--cb1-color-contrast-higher-hsl));
+    /* background: hsl(var(--cb1-color-bg-dark-hsl)); */
+    /* color: hsl(var(--cb1-color-contrast-higher-hsl)); */
     cursor: pointer;
     text-decoration: none;
     line-height: 1.2;
@@ -257,7 +247,7 @@ Title: Confetti Button
 }
 
 .cb1-btn:focus-visible {
-    box-shadow: 0px 0px 0px 2px hsl(var(--cb1-color-bg-hsl)), 0px 0px 0px 4px hsla(var(--cb1-color-contrast-higher-hsl), 0.15);
+    /* box-shadow: 0px 0px 0px 2px hsl(var(--cb1-color-bg-hsl)), 0px 0px 0px 4px hsla(var(--cb1-color-contrast-higher-hsl), 0.15); */
     outline: none;
 }
 
@@ -267,18 +257,12 @@ Title: Confetti Button
 
 .cb1-btn--subtle {
     background: #001C45;
-    color: hsl(var(--cb1-color-contrast-higher-hsl));
-    box-shadow: inset 0px 1px 0px hsla(var(--cb1-color-white-hsl), 0.1), 0px 0px 0px 1px hsla(var(--cb1-color-black-hsl), 0.02), 0px 1px 3px -1px hsla(var(--cb1-color-black-hsl), 0.2), 0 0.3px 0.4px rgba(0, 0, 0, 0.025), 0 0.9px 1.5px rgba(0, 0, 0, 0.05), 0 3.5px 6px rgba(0, 0, 0, 0.1);
 }
 
 .cb1-btn--subtle:hover {
     background: #001C45;
-    box-shadow: inset 0px 1px 0px hsla(var(--cb1-color-white-hsl), 0.1), 0px 0px 0px 1px hsla(var(--cb1-color-black-hsl), 0.02), 0px 1px 3px -1px hsla(var(--cb1-color-black-hsl), 0.2), 0 0.1px 0.3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.12);
 }
 
-.cb1-btn--subtle:focus {
-    box-shadow: inset 0px 1px 0px hsla(var(--cb1-color-white-hsl), 0.1), 0px 0px 0px 1px hsla(var(--cb1-color-black-hsl), 0.02), 0px 1px 3px -1px hsla(var(--cb1-color-black-hsl), 0.2), 0 0.1px 0.3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.12), 0px 0px 0px 2px hsl(var(--cb1-color-bg-hsl)), 0px 0px 0px 4px hsl(var(--cb1-color-contrast-high-hsl));
-}
 
 /* component */
 .confetti-btn__icon {
