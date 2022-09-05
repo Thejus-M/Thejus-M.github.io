@@ -14,19 +14,21 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Lancelot&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer+SC&family=La+Belle+Aurore&family=Lancelot&display=swap" rel="stylesheet">
-        <link href='https://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
+        <link
+        href='https://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
 
         <!-- titlebar icon -->
-        <link rel="shortcut icon" href="{% static 'images/logo-removebg-preview.png' %}" type="image/png">
+        <link
+        rel="shortcut icon" href="{% static 'images/logo-removebg-preview.png' %}" type="image/png">
 
         <!-- css -->
-        <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
-        {% block css %}{% endblock css %}
-            
+        <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}"> {% block css %}{% endblock css %}
+
         <title class="logo">
             {% block title %}
                 Home
-            {% endblock title %}</title>
+            {% endblock title %}
+        </title>
     </head>
 
     <body>
@@ -36,6 +38,7 @@
                 <li class="logo">
                     <div class="confetti-btn cb1-inline-block cb1-position-relative js-confetti-btn">
                         <div class="confetti-btn__btn cb1-btn cb1-btn--subtle js-confetti-btn__btn">
+
                             <img src="{% static 'images/logo-removebg-preview.png' %}" alt="Logo" width="60px">
 
                         </div>
@@ -51,28 +54,34 @@
                     </div>
 
                 </li>
-                <li class="right">
+                <li class="right ham-menu">
+                    <img src="{% static 'images/hamburger.png' %}" alt="icon" width="40px">
+                </li>
+                <li class="right close-ham-menu">
+                    <img src="{% static 'images/close-hamburger.png' %}" alt="icon" width="40px">
+                </li>
+                <li class="right collapse">
                     <a href="#about">
                         Github
                     </a>
                 </li>
-                <li class="right">
+                <li class="right collapse ">
                     <a href="#about">
                         About
                     </a>
                 </li>
-                <li class="right">
-                    <a href="projects.html">
+                <li class="right collapse">
+                    <a {% if request.path == '/projects' %} class="active" {% endif %} href="{% url 'projects' %}">
                         Projects
                     </a>
                 </li>
-                <li class="right">
-                    <a href="skills.html">
+                <li class="right collapse">
+                    <a {% if request.path == '/skills' %} class="active" {% endif %} href="{% url 'skills' %}">
                         Skills
                     </a>
                 </li>
-                <li class="right">
-                    <a class="active" href="#home">
+                <li class="right collapse">
+                    <a {% if request.path == '/' %} class="active" {% endif %} href="{% url 'home' %}">
                         Home
                     </a>
                 </li>
@@ -87,9 +96,12 @@
 
 
         <footer>
+            <br>
+            <br>
             <span class="code">
                 &nbsp;&nbsp;&nbsp; &#9001;footer&#9002;
             </span>
+            <br><br><br>
             <div class="inside-footer"></div>
             <br>
             <br>
@@ -98,75 +110,71 @@
                 Connect with me on
                 <br>
                 <br>
-                <span class="code">
-                    &#9001;a&#9002;
-                </span>
                 <a href="https://www.linkedin.com/in/thejus-m-872276227">
+                    <span class="code">
+                        &#9001;a&#9002;
+                    </span>
                     LinkedIn
+                    <span class="code">
+                        &#9001;/a&#9002;
+                    </span>
                 </a>
-                <span class="code">
-                    &#9001;/a&#9002;
-                </span>
                 <!-- <br> -->
-                <span class="code">
-                    &nbsp;&nbsp;&nbsp; &#9001;a&#9002;
-                </span>
                 <a href="https://github.com/Thejus-M">
+                    <span class="code">
+                        &nbsp;&nbsp;&nbsp; &#9001;a&#9002;
+                    </span>
                     Github
+                    <span class="code">
+                        &#9001;/a&#9002;
+                    </span>
                 </a>
-                <span class="code">
-                    &#9001;/a&#9002;
-                </span>
                 <!-- <br> -->
-                <span class="code">
-                    &nbsp;&nbsp;&nbsp; &#9001;a&#9002;
-                </span>
                 <a href="https://t.me/no_lemon_no_melon">
+                    <span class="code">
+                        &nbsp;&nbsp; &#9001;a&#9002;
+                    </span>
                     Telegram
+                    <span class="code">
+                        &#9001;/a&#9002;
+                    </span>
                 </a>
-                <span class="code">
-                    &#9001;/a&#9002;
-                </span>
 
             </div>
+
             <br>
             <br>
+            <br>
+            <br>
+            <div class="copyright">
+                &copy; &nbsp;
+                <span id="copyright-year"></span>
+                &nbsp;
+                <span class="code">
+                    &#9001;/
+                </span>
+                <span class="copyright-logo">
+                    T
+                </span>
+                <span class="code">
+                    &#9002;
+                </span>
+            </div>
             <br>
             <br>
             <span class="code">
                 &nbsp;&nbsp;&nbsp; &#9001;/footer&#9002;
             </span>
+
+
+            <div class="code">
+                &nbsp; &#9001;/body&#9002;
+            </div>
+            <br><br>
         </footer>
 
 
-        <br>
-        <br>
-
-        <div class="copyright">
-            &copy; &nbsp;
-            <span id="copyright-year"></span>
-            &nbsp;
-            <span class="code">
-                &#9001;/
-            </span>
-            <span class="copyright-logo">
-                T
-            </span>
-            <span class="code">
-                &#9002;
-            </span>
-        </div>
-        <script>
-            document.getElementById("copyright-year").innerHTML = new Date().getFullYear();
-        </script>
-        <br>
-        <br>
-
-        <div class="code">
-            &nbsp; &#9001;/body&#9002;
-        </div>
-
-        <script src="script.js"></script>
+        <script src="{% static 'scripts/script.js' %}"></script>
     </body>
 
 </html>

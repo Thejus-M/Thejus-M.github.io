@@ -1,0 +1,261 @@
+{% extends 'base.html' %}
+{% load static  %}
+
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/projects.css' %}">
+{% endblock css %}
+
+{% block title %}
+    Projects
+{% endblock title %}
+
+
+{% block content %}
+
+    <header>
+        <div class="top-div">
+            <h1>
+                <span class="code">
+                    &#9001;h1&#9002;
+                </span>
+                My Projects
+                <span class="code">
+                    &#9001;/h1&#9002;
+                </span>
+            </h1>
+            <p>
+                <label class="sub-head-label">
+                    <span class="code">
+                        &#9001;p&#9002;
+                    </span>
+
+                    👇 Scroll down to see them
+                    <span class="code">
+                        &#9001;/p&#9002;
+                    </span>
+                </label>
+            </p>
+        </div>
+    </header>
+    
+    <!--! project display start  -->
+    <div class="projects">
+
+        <section class="fo3-position-relative fo3-z-index-1 fo3-padding-y-lg">
+            <div class="fo3-container fo3-max-width-adaptive-lg">
+                <div class="fo3-grid  fo3-gap-y-lg fo3-gap-lg@md">
+
+
+                    <div class="card fo3-col-6@md">
+                        <img class="fo3-block fo3-width-100% fo3-margin-bottom-sm" src="{% static 'images/rps (1).png' %}" alt="Image description">
+
+                        <div class="fo3-text-component">
+                            <h4>
+                                Feature One
+                            </h4>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium assumenda doloribus
+                                                            eos provident modi.
+                                <span class="chip chip--success cw8-text-sm">
+                                    <img class="chip__img" src="{% static 'images/django.png' %}" alt="ico">
+                                    <i class="chip__label ">
+                                        Django
+                                    </i>
+                                </span>
+                                <span class="chip chip--success cw8-text-sm">
+                                    <img class="chip__img" src="{% static 'images/django.png' %}" alt="ico">
+                                    <i class="chip__label">
+                                        Python
+                                    </i>
+                                </span>
+                                <span class="chip chip--success cw8-text-sm">
+                                    <img class="chip__img" src="{% static 'images/django.png' %}" alt="ico">
+                                    <i class="chip__label">
+                                        Flask
+                                    </i>
+                                </span>
+                            </p>
+                            <p>
+                                <a class="link-fx-1 lw7-color-contrast-higher" href="#0">
+                                    <span>
+                                        Read more
+                                    </span>
+                                    <svg class="lw7-icon" viewbox="0 0 32 32" aria-hidden="true">
+                                        <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                                            <circle cx="16" cy="16" r="15.5"/>
+                                            <line x1="10" y1="18" x2="16" y2="12"/>
+                                            <line x1="16" y1="12" x2="22" y2="18"/>
+                                        </g>
+                                    </svg>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="card fo3-col-6@md">
+                        <img class="fo3-block fo3-width-100% fo3-margin-bottom-sm" src="{% static 'images/rps (1).png' %}" alt="Image description">
+
+                        <div class="fo3-text-component">
+                            <h4>
+                                Feature Two
+                            </h4>
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam distinctio inventore
+                                                            architecto.
+                            </p>
+                            <p>
+                                <a class="link-fx-1 lw7-color-contrast-higher" href="#0">
+                                    <span>
+                                        Read more
+                                    </span>
+                                    <svg class="lw7-icon" viewbox="0 0 32 32" aria-hidden="true">
+                                        <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                                            <circle cx="16" cy="16" r="15.5"/>
+                                            <line x1="10" y1="18" x2="16" y2="12"/>
+                                            <line x1="16" y1="12" x2="22" y2="18"/>
+                                        </g>
+                                    </svg>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="card fo3-col-6@md">
+                        <img class="fo3-block fo3-width-100% fo3-margin-bottom-sm" src="{% static 'images/rps (1).png' %}" alt="Image description">
+
+                        <div class="fo3-text-component">
+                            <h4>
+                                Feature Three
+                            </h4>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium assumenda doloribus
+                                                            eos provident modi.
+                            </p>
+                            <p>
+                                <a class="link-fx-1 lw7-color-contrast-higher" href="#0">
+                                    <span>
+                                        Read more
+                                    </span>
+                                    <svg class="lw7-icon" viewbox="0 0 32 32" aria-hidden="true">
+                                        <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                                            <circle cx="16" cy="16" r="15.5"/>
+                                            <line x1="10" y1="18" x2="16" y2="12"/>
+                                            <line x1="16" y1="12" x2="22" y2="18"/>
+                                        </g>
+                                    </svg>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="card fo3-col-6@md">
+                        <img class="fo3-block fo3-width-100% fo3-margin-bottom-sm" src="{% static 'images/rps (1).png' %}" alt="Image description">
+
+                        <div class="fo3-text-component">
+                            <h4>
+                                Feature Four
+                            </h4>
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam distinctio inventore
+                                                            architecto.
+                            </p>
+                            <p>
+                                <a class="link-fx-1 lw7-color-contrast-higher" href="#0">
+                                    <span>
+                                        Read more
+                                    </span>
+                                    <svg class="lw7-icon" viewbox="0 0 32 32" aria-hidden="true">
+                                        <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                                            <circle cx="16" cy="16" r="15.5"/>
+                                            <line x1="10" y1="18" x2="16" y2="12"/>
+                                            <line x1="16" y1="12" x2="22" y2="18"/>
+                                        </g>
+                                    </svg>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+
+                    
+                    {% for pro in project %}
+                        
+                    <div class="card fo3-col-6@md">
+                        <img class="fo3-block fo3-width-100% fo3-margin-bottom-sm" src="media/{{ pro.project_pic}}" alt="Image description">
+
+                        <div class="fo3-text-component">
+                            <h4 class="top-title">
+                                <span class="title">{{pro.title}}</span>
+                                <br><br>
+                                <a class="right--linkURL btn-fx-2 bp3-text-sm bp3-padding-y-xs bp3-padding-x-sm" href="{{pro.website_url}}" aria-label="Slide">
+                                <span>
+                                    <em><i>W</i><i>E</i><i>B</i><i>S</i><i>I</i><i>T</i><i>E</i><i>&nbsp; </i><i>U</i><i>R</i><i>L</i></em>
+                                    <em><i>W</i><i>E</i><i>B</i><i>S</i><i>I</i><i>T</i><i>E</i><i>&nbsp; </i><i>U</i><i>R</i><i>L</i></em>
+                                </span>
+                            </a>
+                        </h4>
+                            <p>
+                                {{pro.description}} 
+                            </p>
+
+                            
+                            {% for tag in pro.tag.all %}
+                                <span class="chip chip--success cw8-text-sm">
+                                    <img class="chip__img" src="media/{{tag.tag_img}}" alt="ico">
+                                    <i class="chip__label">
+                                        {{tag}}
+                                    </i>
+                                </span>
+                            {% endfor %}
+                                
+
+                            <p>
+                                <a class="left--linkURL link-fx-1 lw7-color-contrast-higher" href="{{pro.read_more_url}}">
+                                    <span>
+                                        Read more
+                                    </span>
+                                    <svg class="lw7-icon" viewbox="0 0 32 32" aria-hidden="true">
+                                        <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                                            <circle cx="16" cy="16" r="15.5"/>
+                                            <line x1="10" y1="18" x2="16" y2="12"/>
+                                            <line x1="16" y1="12" x2="22" y2="18"/>
+                                        </g>
+                                    </svg>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    {% endfor %}
+                        
+
+                </div>
+            </div>
+        </section>
+        <br>
+        <br>
+        <div class="more_but">
+            <div class="inner-button">
+                <a class="btn-fx-4 bp3-padding-y-xs bp3-padding-x-md bp3-radius-md" href="#0">
+                    <span>
+                        More Projects
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!--! body starts  -->
+    <!--! project display start  -->
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <script src="projects.js"></script>
+
+
+{% endblock content %}
