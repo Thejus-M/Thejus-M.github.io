@@ -1,0 +1,172 @@
+{% load static  %}
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta
+        name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lancelot&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Lancelot&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer+SC&family=La+Belle+Aurore&family=Lancelot&display=swap" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
+
+        <!-- titlebar icon -->
+        <link rel="shortcut icon" href="{% static 'images/logo-removebg-preview.png' %}" type="image/png">
+
+        <!-- css -->
+        <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+        {% block css %}{% endblock css %}
+            
+        <title class="logo">
+            {% block title %}
+                Home
+            {% endblock title %}</title>
+    </head>
+
+    <body>
+        <!--! navbar start -->
+        <navbar>
+            <ul class="topnav">
+                <li class="logo">
+                    <div class="confetti-btn cb1-inline-block cb1-position-relative js-confetti-btn">
+                        <div class="confetti-btn__btn cb1-btn cb1-btn--subtle js-confetti-btn__btn">
+                            <img src="{% static 'images/logo-removebg-preview.png' %}" alt="Logo" width="60px">
+
+                        </div>
+
+                        <svg class="confetti-btn__icon js-confetti-btn__icon" viewbox="0 0 16 16" aria-hidden="true">
+                            <circle class="conf-btn-svg-item-0" fill="currentColor" cx="8" cy="8" r="8"/>
+                            <polygon class="conf-btn-svg-item-1" fill="#f888c0" points="10.3 6.212 3.3 0.581 1 15.419 15 9.991 10.3 6.212"/>
+                            <path class="conf-btn-svg-item-2" fill="#fa9856" d="M2,8a6,6,0,1,1,6,6A5.993,5.993,0,0,1,2,8Z"/>
+                            <polygon class="conf-btn-svg-item-3" fill="#2842c3" points="7.52 0 5.001 5.898 1.888 13.184 8.48 16 14.112 2.816 7.52 0"/>
+                            <path class="conf-btn-svg-item-4" fill="#f5c09a" d="M2,8a6,6,0,1,1,6,6A6,6,0,0,1,2,8Z"/>
+                            <polygon class="conf-btn-svg-item-5" fill="#3aace9" points="14.164 9.474 14.723 0.507 8.578 3.562 1.277 7.192 13.789 15.493 14.164 9.474"/>
+                        </svg>
+                    </div>
+
+                </li>
+                <li class="right">
+                    <a href="#about">
+                        Github
+                    </a>
+                </li>
+                <li class="right">
+                    <a href="#about">
+                        About
+                    </a>
+                </li>
+                <li class="right">
+                    <a href="projects.html">
+                        Projects
+                    </a>
+                </li>
+                <li class="right">
+                    <a href="skills.html">
+                        Skills
+                    </a>
+                </li>
+                <li class="right">
+                    <a class="active" href="#home">
+                        Home
+                    </a>
+                </li>
+            </ul>
+        </navbar>
+        <!--! navbar end -->
+
+
+        {% block content %}
+            Hello
+        {% endblock content %}
+
+
+        <footer>
+            <span class="code">
+                &nbsp;&nbsp;&nbsp; &#9001;footer&#9002;
+            </span>
+            <div class="inside-footer"></div>
+            <br>
+            <br>
+            <div class="contact">
+                <br>
+                Connect with me on
+                <br>
+                <br>
+                <span class="code">
+                    &#9001;a&#9002;
+                </span>
+                <a href="https://www.linkedin.com/in/thejus-m-872276227">
+                    LinkedIn
+                </a>
+                <span class="code">
+                    &#9001;/a&#9002;
+                </span>
+                <!-- <br> -->
+                <span class="code">
+                    &nbsp;&nbsp;&nbsp; &#9001;a&#9002;
+                </span>
+                <a href="https://github.com/Thejus-M">
+                    Github
+                </a>
+                <span class="code">
+                    &#9001;/a&#9002;
+                </span>
+                <!-- <br> -->
+                <span class="code">
+                    &nbsp;&nbsp;&nbsp; &#9001;a&#9002;
+                </span>
+                <a href="https://t.me/no_lemon_no_melon">
+                    Telegram
+                </a>
+                <span class="code">
+                    &#9001;/a&#9002;
+                </span>
+
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <span class="code">
+                &nbsp;&nbsp;&nbsp; &#9001;/footer&#9002;
+            </span>
+        </footer>
+
+
+        <br>
+        <br>
+
+        <div class="copyright">
+            &copy; &nbsp;
+            <span id="copyright-year"></span>
+            &nbsp;
+            <span class="code">
+                &#9001;/
+            </span>
+            <span class="copyright-logo">
+                T
+            </span>
+            <span class="code">
+                &#9002;
+            </span>
+        </div>
+        <script>
+            document.getElementById("copyright-year").innerHTML = new Date().getFullYear();
+        </script>
+        <br>
+        <br>
+
+        <div class="code">
+            &nbsp; &#9001;/body&#9002;
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+
+</html>
